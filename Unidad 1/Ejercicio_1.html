@@ -8,47 +8,69 @@
 
     <style>
 
-* {
+    * {
 
-    font-size: 20px;
-}
+        
+        font-size: 20px;
+    }
 
+    div{
+
+        text-align: center;
+        align-content: center;
+    }
         .HEADER {
 
+            height: 4em;
             background-color: black;
             color:white;
         }
 
         .MENU{
 
+            height: 4em;
+            background-color: red;
+            color: white;
+        }
+
+        .MENU2{
+
+            
             background-color: red;
             color: white;
         }
 
         .HERO {
 
+            height: 10em;
             background-color: cyan;
             color:white;
         }
 
         .MAIN {
 
+            height: 7em;
             background-color: gray;
             color: white;
         }
 
         .BANNER {
 
+            height: 3em;
             background-color: yellow;
         }
         .EXTRA {
 
+            height: 3em;
             background-color: green;
         }
         .IMAGE{
 
+            
+            height: 3em;
             background-color: lightgreen;
         }
+
 
 
     </style>
@@ -57,33 +79,52 @@
 
     <body>
 
-        <div class="container">
-            <div style = "height: 5vh" class="col HEADER">
-                HEADER
-            </div>
-            <div style = "height: 6vh" class="col MENU">
-                MENU
-            </div>
-            <div style = "height: 10vh" class="col HERO">
-                HERO
-            </div>
-            <div style = "height: 12vh" class="col MAIN">
-                MAIN
-            </div>
-            <div style = "height: 5vh" class="col BANNER">
-                BANNER
-            </div>
-            <div style = "height: 5vh" class="col EXTRA">
-                EXTRA
-            </div>
-            <div style = "height: 5vh" class="col- IMAGE">
-                IMAGE
-            </div>
+        <div class="container justify-content-center">
+
+                <div class="row">
+
+                    <div class="col-12 col-md-12 col-lg-2 HEADER">
+                        HEADER
+                    </div>
+                    <div class="col-12 col-md-2 d-md-none d-lg-block col-lg-10 MENU">
+                        MENU
+                    </div>
+                    <div class="col-12 HERO">
+                        HERO
+                    </div>
+                </div>
+          
+
+                <div class="row">
+
+                    <div class="d-none d-md-block d-lg-none col-md-2  MENU2"></div>
+
+                    <div class="col-12 col-md-10 col-lg-6 MAIN">
+                        MAIN
+                    </div>
+
+                    <div class=" d-none d-md-block d-lg-none col-md-2 MENU2">
+                        MENU
+                    </div>
+
+                    <div class="col-12 col-md-10  col-lg-12 order-lg-3 BANNER">
+                        BANNER
+                    </div>
+
+                    <div class=" d-none d-md-block d-lg-none col-md-2 MENU2"></div>
+
+                    <div class="col-12 col-md-7 col-lg-3 order-lg-2 EXTRA">
+                        EXTRA
+                    </div>
+
+                    <div class="col-12 col-md-3 col-lg-3 order-lg-1 g-0 IMAGE">
+                        IMAGE
+                    </div>
+                    
+                </div>
         </div>
 
-        
     </body>
-
 
 
 </html>
