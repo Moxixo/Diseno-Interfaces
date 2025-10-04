@@ -4,9 +4,13 @@
 
 <head>
 
+    <!--Enlace para aplicar Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!--Etiqueta para aplicar CSS Interno-->
     <style>
+
+    /*Estilo que se aplica en generl a toda la página*/
 
     * {
 
@@ -14,11 +18,15 @@
         font-size: 20px;
     }
 
+    /*Estilo por defecto para todos los div*/
+
     div{
 
         text-align: center;
         align-content: center;
     }
+
+    /*Clases para los diferentes div de la pagina*/
         .HEADER {
 
             height: 4em;
@@ -29,13 +37,6 @@
         .MENU{
 
             height: 4em;
-            background-color: red;
-            color: white;
-        }
-
-        .MENU2{
-
-            
             background-color: red;
             color: white;
         }
@@ -71,6 +72,15 @@
             background-color: lightgreen;
         }
 
+        /*Clase para los div de la ñapa*/
+
+        .MENU2{
+
+            
+            background-color: red;
+            color: white;
+        }
+
 
 
     </style>
@@ -79,40 +89,51 @@
 
     <body>
 
+        <!--Contenedor general de la pagina-->
+
         <div class="container justify-content-center">
 
+
+                <!--Primera fila dentro del contenedor-->
                 <div class="row">
 
                     <div class="col-12 col-md-12 col-lg-2 HEADER">
                         HEADER
                     </div>
-                    <div class="col-12 col-md-2 d-md-none d-lg-block col-lg-10 MENU">
+                    <div class="col-12 d-md-none d-lg-block col-lg-10 MENU">
                         MENU
                     </div>
                     <div class="col-12 HERO">
                         HERO
                     </div>
+ 
                 </div>
           
+                <!--Segunda fila dentro del contenedor-->
 
                 <div class="row">
 
+                    <!--Primer div para el Menu en tamaño tablet-->
                     <div class="d-none d-md-block d-lg-none col-md-2  MENU2"></div>
 
                     <div class="col-12 col-md-10 col-lg MAIN">
                         MAIN
                     </div>
 
+                    <!--Segundo div para el Menu en tamaño tablet-->
                     <div class=" d-none d-md-block d-lg-none col-md-2 order-md-1 MENU2">
                         MENU
                     </div>
 
-                    <div class="col-12 col-md-10  col-lg-12 order-1 order-lg-3 order-md-2 BANNER">
+                    <div class="col-12 col-md-10  col-lg-12 order-1 order-lg-2 order-md-2 BANNER">
                         BANNER
                     </div>
 
+                    <!--Div que ocupa las columnas al lado de Main en el tamaño Desktop-->
+
                     <div class="col order-2 order-md-4 order-lg-1">
 
+                        <!--Una fila para poder poner los div de Image y Extra -->
                         <div class="row">
 
                             <div class="col-12 col-md-7 col-lg-7 offset-lg-5 EXTRA">
@@ -129,7 +150,7 @@
                     </div>
 
                     
-
+                    <!--Tercero div para el Menu en el tamaño Tablet-->
                     <div class=" d-none d-md-block d-lg-none col-md-2 order-md-3 MENU2"></div>
 
                 </div>
